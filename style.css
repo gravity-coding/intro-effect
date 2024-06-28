@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main-gc {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgb(89, 255, 0); */
+  overflow: hidden;
+}
+
+.slides {
+  width: 100%;
+  height: 300vh;
+  /* background-color: orangered; */
+  rotate: -20deg;
+  gap: 2vh;
+}
+
+.slide {
+  width: 250%;
+  height: 40vh;
+  /* background-color: #fff; */
+  gap: 2vh;
+}
+
+.slide-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 100%;
+  /* background-color: aquamarine; */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slide-img img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Assets/noise.png);
+}
+
+.overlay button {
+  padding: 1.2vw 3vw;
+  border-radius: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+}
+
+.slide1, .slide3, .slide5{
+    transition: all ease 0.5s;
+}
+
+.slide2, .slide4{
+    transition: all ease 0.8s;
+}
+
